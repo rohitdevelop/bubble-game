@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.cantainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(117, 190, 127);
+}
+
+.modail {
+    height: 80%;
+    width: 80%;
+    background-color: rgb(236, 246, 236);
+    text-align: center;
+    color: rgb(242, 239, 239); /* Changed to black for better readability */
+    overflow: hidden;
+}
+
+.nav {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(6, 91, 3);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10px; /* Added padding for better spacing */
+}
+
+.box {
+    height: 3.5vh;
+    width: 2.5vw;
+    background-color: white;
+    color: rgb(236, 224, 224);
+    padding-top: 0.5vh;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1.5vw;
+    color: rgb(48, 177, 134);
+}
+
+.ptop {
+    display: flex;
+    gap: 5px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 3vw;
+    background-color: rgb(40, 73, 41);
+    margin: 5px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.circle:hover {
+    background-color: rgb(93, 179, 93);
+}
+
+.btn-box {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(136, 172, 172);
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(255, 0, 0);
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color: rgb(237, 123, 123);
+    box-shadow: 2px 2px black;
+}
+.btn-restart {
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(255, 0, 0);
+    border-radius: 12px;
+}
+
+.btn-restart:hover {
+    background-color: rgb(237, 123, 123);
+    box-shadow: 2px 2px black;
+}
+
+.sugest {
+    height: 40%;
+    width: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .modail {
+        height: 70%;
+        width: 90%;
+    }
+
+    .box {
+        height: 4vh;
+        width: 4vw;
+        font-size: 4vw;
+    }
+
+    .circle {
+        height: 6vh;
+        width: 5vw;
+        font-size: 3vw;
+    }
+
+    .btn {
+        width: 20vw;
+        height: 15vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .modail {
+        height: 60%;
+        width: 95%;
+    }
+
+    .box {
+        height: 5vh;
+        width: 6vw;
+        font-size: 5vw;
+    }
+
+    .circle {
+        height: 7vh;
+        width: 7vw;
+        font-size: 4vw;
+    }
+
+    .btn {
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .nav {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .sugest h1 {
+        font-size: 4vw;
+    }
+}
